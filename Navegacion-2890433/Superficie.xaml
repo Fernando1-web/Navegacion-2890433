@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacion_2890433.Superficie"
+             Title="Superficie">
+    <ScrollView>
+        <StackLayout Margin="20,35,20,20" Spacing="10">
+            <Image Source="superficie.png" HeightRequest="400" WidthRequest="400"/>
+            <Label Text="App para calcular Superficies" FontSize="22"/>
+            <Entry x:Name="Base" Placeholder="Ingrese la base (En centímetros)"/>
+            <Entry x:Name="Altura" Placeholder="Ingrese la altura (En centímetros)"/>
+            <Button x:Name="Calcular" Text="Calcular Superficie" Clicked="Calcular_Clicked" HorizontalOptions="End"/>
+            <Label Text="Superficie" x:Name="LblArea"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
